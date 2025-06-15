@@ -1,12 +1,13 @@
 import { Await } from "react-router-dom";
-import conf from "../conf.js";
+import conf from "../conf/conf.js"
+
 import { Client, Account, ID } from "appwrite";
 export class AuthServices{
     client =new Client();
     account;
     constructor(){
         this.client
-        .setEndpoint(conf.appwriteURL)
+        .setEndpoint(conf.appwriteUrl)
         .setProject(conf.appwriteProjectId);
         this.account=new Account(this.client); 
         
@@ -27,21 +28,21 @@ async createAccount({ email, password, name }) {
 
 async login(email,password){
     try {
-        await.this.account.createEmailSession(email,password);
+     return  await this.account.createEmailSession(email,password);
     } catch (error) {
         throw error;
     }
 }
 
-async getCurrentUser(){
-    try {
-    return  await this.account.get();
-    } catch (error) {
-        throw error;
-    }
+  async getCurrentUser() {
+        try {
+            return await this.account.get();
+        } catch (error) {
+            console.log("Appwrite serive :: getCurrentUser :: error", error);
+        }
 
-    return null;
-}
+        return null;
+    }
 async logout(){
     try {
        return await this.account.deleteSessions();
@@ -52,7 +53,7 @@ async logout(){
     }
 }
 }
+const authService = new AuthServices();
 
 export default AuthServices
 
-const authservice=new Authservices(); 

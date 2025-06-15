@@ -1,5 +1,5 @@
 //appwrite config
-import conf from "../conf.js";
+import conf from "../conf/conf.js"
 import { Client, ID ,Databases,Storage,Query} from "appwrite";
 
 
@@ -121,7 +121,7 @@ async getPosts(queries = [Query.equal("status", "active")]){
 }
 
 
-}
+
 
 const Service=new Service()
 export default Service
