@@ -6,8 +6,9 @@ import { useDispatch } from 'react-redux'
 import AuthServices from './appwrite/auth'
 import {login} from "./store/authslice"
 import {logout} from "./store/authslice"
-import { Footer } from './components/Header'
-
+import Footer  from './components/Footer/Footer'
+import authService from './appwrite/auth'
+import Header from './components/Header/Header'
 function App() {
 const[loading , setLoading]=useState(true)
 const dispatch=useDispatch()
