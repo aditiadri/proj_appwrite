@@ -76,7 +76,7 @@ placeholder="enter your password"
 
 
 />
-<Button>Sign In </Button>
+<Button type="submit" className="w-full">Sign In </Button>
 
             </div>
         </form>
