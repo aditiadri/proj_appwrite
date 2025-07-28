@@ -1,0 +1,79 @@
+Date : 2025-07-29 00:26:25
+Directory : c:\Users\91790\OneDrive\Desktop\notesapp
+Total : 33 files,  4461 codes, 4 comments, 164 blanks, all 4629 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JSON           |          2 |      3,472 |          0 |          2 |      3,474 |
+| JavaScript JSX |         16 |        608 |          1 |         97 |        706 |
+| JavaScript     |          8 |        258 |          3 |         44 |        305 |
+| PostCSS        |          2 |        100 |          0 |         14 |        114 |
+| HTML           |          1 |         13 |          0 |          1 |         14 |
+| Markdown       |          2 |          8 |          0 |          6 |         14 |
+| XML            |          2 |          2 |          0 |          0 |          2 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                         | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                            |         33 |      4,461 |          4 |        164 |      4,629 |
+| . (Files)                                                                                    |          1 |          1 |          0 |          0 |          1 |
+| vite-project                                                                                 |         32 |      4,460 |          4 |        164 |      4,628 |
+| vite-project (Files)                                                                         |          6 |      3,532 |          1 |         14 |      3,547 |
+| vite-project\public                                                                          |          1 |          1 |          0 |          0 |          1 |
+| vite-project\src                                                                             |         25 |        927 |          3 |        150 |      1,080 |
+| vite-project\src (Files)                                                                     |          4 |        148 |          0 |         22 |        170 |
+| vite-project\src\appwrite                                                                    |          2 |        167 |          2 |         29 |        198 |
+| vite-project\src\assets                                                                      |          1 |          1 |          0 |          0 |          1 |
+| vite-project\src\components                                                                  |         14 |        541 |          1 |         78 |        620 |
+| vite-project\src\components (Files)                                                          |         11 |        334 |          1 |         64 |        399 |
+| vite-project\src\components\Footer                                                           |          1 |        141 |          0 |          2 |        143 |
+| vite-project\src\components\Header                                                           |          1 |         61 |          0 |          8 |         69 |
+| vite-project\src\components\container                                                        |          1 |          5 |          0 |          4 |          9 |
+| vite-project\src\conf                                                                        |          1 |          8 |          0 |          3 |         11 |
+| vite-project\src\post-form                                                                   |          1 |         33 |          0 |         11 |         44 |
+| vite-project\src\store                                                                       |          2 |         29 |          0 |          7 |         36 |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                     | language       | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\91790\OneDrive\Desktop\notesapp\README.md                                           | Markdown       |          1 |          0 |          0 |          1 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\README.md                              | Markdown       |          7 |          0 |          6 |         13 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\eslint.config.js                       | JavaScript     |         32 |          0 |          2 |         34 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\index.html                             | HTML           |         13 |          0 |          1 |         14 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\package-lock.json                      | JSON           |      3,442 |          0 |          1 |      3,443 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\package.json                           | JSON           |         30 |          0 |          1 |         31 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\public\vite.svg                        | XML            |          1 |          0 |          0 |          1 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\App.css                            | PostCSS        |         38 |          0 |          6 |         44 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\App.jsx                            | JavaScript JSX |         35 |          0 |          6 |         41 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\appwrite\auth.js                   | JavaScript     |         49 |          1 |         10 |         60 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\appwrite\config.js                 | JavaScript     |        118 |          1 |         19 |        138 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\assets\react.svg                   | XML            |          1 |          0 |          0 |          1 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\AuthLayout.jsx          | JavaScript JSX |         18 |          1 |          5 |         24 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Button.jsx              | JavaScript JSX |         15 |          0 |          4 |         19 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Footer\Footer.jsx       | JavaScript JSX |        141 |          0 |          2 |        143 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Header\Header.jsx       | JavaScript JSX |         61 |          0 |          8 |         69 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Input.jsx               | JavaScript JSX |         22 |          0 |          2 |         24 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Login.jsx               | JavaScript JSX |         78 |          0 |         12 |         90 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Logo.jsx                | JavaScript JSX |          7 |          0 |          3 |         10 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Logout.jsx              | JavaScript JSX |         14 |          0 |          6 |         20 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Postcards.jsx           | JavaScript JSX |         14 |          0 |          8 |         22 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\RTE.jsx                 | JavaScript JSX |         48 |          0 |          2 |         50 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Select.jsx              | JavaScript JSX |         23 |          0 |          4 |         27 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Signup.jsx              | JavaScript JSX |         81 |          0 |         18 |         99 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\container\Container.jsx | JavaScript JSX |          5 |          0 |          4 |          9 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\index.js                | JavaScript     |         14 |          0 |          0 |         14 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\conf\conf.js                       | JavaScript     |          8 |          0 |          3 |         11 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\index.css                          | PostCSS        |         62 |          0 |          8 |         70 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\main.jsx                           | JavaScript JSX |         13 |          0 |          2 |         15 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\post-form\PostForm.jsx             | JavaScript JSX |         33 |          0 |         11 |         44 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\store\authslice.js                 | JavaScript     |         21 |          0 |          4 |         25 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\store\store.js                     | JavaScript     |          8 |          0 |          3 |         11 |
+| c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\vite.config.js                         | JavaScript     |          8 |          1 |          3 |         12 |
+| Total                                                                                        |                |      4,461 |          4 |        164 |      4,629 |
++----------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

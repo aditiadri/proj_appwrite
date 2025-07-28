@@ -1,0 +1,35 @@
+"filename", "language", "Markdown", "JSON", "XML", "JavaScript", "PostCSS", "JavaScript JSX", "HTML", "comment", "blank", "total"
+"c:\Users\91790\OneDrive\Desktop\notesapp\README.md", "Markdown", 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\README.md", "Markdown", 7, 0, 0, 0, 0, 0, 0, 0, 6, 13
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\eslint.config.js", "JavaScript", 0, 0, 0, 32, 0, 0, 0, 0, 2, 34
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\index.html", "HTML", 0, 0, 0, 0, 0, 0, 13, 0, 1, 14
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\package-lock.json", "JSON", 0, 3442, 0, 0, 0, 0, 0, 0, 1, 3443
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\package.json", "JSON", 0, 30, 0, 0, 0, 0, 0, 0, 1, 31
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\public\vite.svg", "XML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\App.css", "PostCSS", 0, 0, 0, 0, 38, 0, 0, 0, 6, 44
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\App.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 35, 0, 0, 6, 41
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\appwrite\auth.js", "JavaScript", 0, 0, 0, 49, 0, 0, 0, 1, 10, 60
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\appwrite\config.js", "JavaScript", 0, 0, 0, 118, 0, 0, 0, 1, 19, 138
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\assets\react.svg", "XML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\AuthLayout.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 18, 0, 1, 5, 24
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Button.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 15, 0, 0, 4, 19
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Footer\Footer.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 141, 0, 0, 2, 143
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Header\Header.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 61, 0, 0, 8, 69
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Input.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 22, 0, 0, 2, 24
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Login.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 78, 0, 0, 12, 90
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Logo.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 7, 0, 0, 3, 10
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Logout.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 14, 0, 0, 6, 20
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Postcards.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 14, 0, 0, 8, 22
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\RTE.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 48, 0, 0, 2, 50
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Select.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 23, 0, 0, 4, 27
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\Signup.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 81, 0, 0, 18, 99
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\container\Container.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 5, 0, 0, 4, 9
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\components\index.js", "JavaScript", 0, 0, 0, 14, 0, 0, 0, 0, 0, 14
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\conf\conf.js", "JavaScript", 0, 0, 0, 8, 0, 0, 0, 0, 3, 11
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\index.css", "PostCSS", 0, 0, 0, 0, 62, 0, 0, 0, 8, 70
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\main.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 13, 0, 0, 2, 15
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\post-form\PostForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 33, 0, 0, 11, 44
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\store\authslice.js", "JavaScript", 0, 0, 0, 21, 0, 0, 0, 0, 4, 25
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\src\store\store.js", "JavaScript", 0, 0, 0, 8, 0, 0, 0, 0, 3, 11
+"c:\Users\91790\OneDrive\Desktop\notesapp\vite-project\vite.config.js", "JavaScript", 0, 0, 0, 8, 0, 0, 0, 1, 3, 12
+"Total", "-", 8, 3472, 2, 258, 100, 608, 13, 4, 164, 4629

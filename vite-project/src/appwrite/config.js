@@ -98,7 +98,18 @@ async getPosts(queries = [Query.equal("status", "active")]){
         }
     }
     
-
+    async uploadFile(file){
+        try {
+            return await this.bucket.createFile(
+                conf.appwriteBucketId,
+                ID.unique(),
+                file
+            )
+        } catch (error) {
+            console.log("Appwrite serive :: uploadFile :: error", error);
+            return false
+        }
+    }
     async deleteFile(fileId){
         try {
             await this.bucket.deleteFile(
@@ -123,5 +134,5 @@ async getPosts(queries = [Query.equal("status", "active")]){
 
 
 
-const Service=new Service()
-export default Service
+const service=new Service()
+export default service
