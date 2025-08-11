@@ -26,7 +26,7 @@ async createAccount({ email, password, name }) {
     }
 }
 
-async login(email,password){
+async login({email,password}){
     try {
      return  await this.account.createEmailSession(email,password);
     } catch (error) {
