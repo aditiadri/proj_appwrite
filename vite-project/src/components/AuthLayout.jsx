@@ -21,4 +21,3 @@ useEffect(()=> {
 
 }
 
-export default AuthLayout
