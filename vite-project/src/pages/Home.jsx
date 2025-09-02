@@ -7,11 +7,13 @@ import appwriteService from "../appwrite/config"
 function Home() {
 
     const [posts,setPosts]=useState([])
-    appwriteService.getPosts([]).then((posts)=>
-    if(posts){
-
-        setPosts(posts.documents)
-    })
+  useEffect(() => {
+        appwriteService.getPosts().then((posts) => {
+            if (posts) {
+                setPosts(posts.documents)
+            }
+        })
+    }, [])
 
     if(posts.length===0){
       return (
