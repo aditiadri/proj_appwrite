@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../Logo'
+import Logo from '../Logo'
 
 function Footer() {
   return (
