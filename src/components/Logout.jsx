@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import authService, { AuthServices } from '../appwrite/auth'
+import authService from '../appwrite/auth'
 import logout from '../store/authslice'
  
 

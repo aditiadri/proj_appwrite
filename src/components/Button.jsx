@@ -1,6 +1,6 @@
 import React, { Children } from 'react'
 
-function button({
+export default function Button({
     Children,
     type="button",
     bgColor="bg-blue",
@@ -16,4 +16,4 @@ ${className }`}{...props}>{Children}</button>
   )
     }
 
-export default button
+ 
