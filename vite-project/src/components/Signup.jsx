@@ -59,7 +59,7 @@ try {
 label="Name:"
 placeholder="Enter your name"
 {...register("name",{
-    required:true;
+    required:true
 })}
 
 
@@ -97,3 +97,4 @@ placeholder="Enter your name"
 }
 
 export default Signup
+

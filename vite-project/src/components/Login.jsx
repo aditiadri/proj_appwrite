@@ -10,7 +10,7 @@ import authService from "../appwrite/auth"
 function Login() {
     const nav=useNavigate();
     const dispatch= useDispatch();
-     const {register, handleSubmit}=useState()
+     const {register, handleSubmit}=useForm()
      const [error,setError]=useState("");
 const login =async(data)=>
 {
@@ -22,7 +22,7 @@ try {
     const userData=await authService.getCurrentUser()
     if(userData){
         dispatch(authLogin(userData));
-        Navigate("/")
+        nav("")
     }
  }
 } catch (error) {
