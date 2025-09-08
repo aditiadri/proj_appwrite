@@ -5,24 +5,39 @@ import {login as authLogin} from "../store/authslice"
 import {button,Input, Logo } from "../index"
 import { useDispatch } from 'react-redux'
 import { useForm } from 'react-hook-form'
-import authService from "../appwrite/auth"
+import authService, { AuthService } from "../appwrite/auth"
+import conf from '../conf/conf'
+
+
+
+
+
+
 
 function Login() {
+
     const nav=useNavigate();
     const dispatch= useDispatch();
      const {register, handleSubmit}=useForm()
      const [error,setError]=useState("");
 const login =async(data)=>
 {
+   
     
 setError("")
-try {
+try {       
+
+    
  const session= await authService.login(data)  
+
+
  if(session){
+  
     const userData=await authService.getCurrentUser()
     if(userData){
         dispatch(authLogin(userData));
         nav("")
+  
     }
  }
 } catch (error) {
