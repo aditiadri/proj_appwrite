@@ -18,6 +18,9 @@ import Post from "./pages/Post";
 import "./testAuth.jsx";
 import AllPosts from "./pages/AllPosts";
 
+import authService from './appwrite/auth.js'
+
+console.log(authService)
 const router = createBrowserRouter([
   {
     path: "/",
