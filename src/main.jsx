@@ -89,5 +89,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
-console.log("Appwrite URL:", import.meta.env.VITE_APPWRITE_URL);
-console.log("Project ID:", import.meta.env.VITE_APPWRITE_PROJECT_ID);
+
