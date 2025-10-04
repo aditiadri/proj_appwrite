@@ -1,8 +1,7 @@
 import React, { useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { Button, Input, Select, RTE } from "../components/index";
-import { Service } from "../appwrite/config";
-const service = new Service();
+import postService from "../services/postService";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -17,36 +16,36 @@ function PostForm({ post }) {
       },
     });
   const navigate = useNavigate();
-  const userData = useSelector((state) => state.user.userData);
+  // Adjusted: auth slice holds userData according to store.js
+  const userData = useSelector((state) => state.auth.userData);
 
   const submit = async (data) => {
     if (post) {
       const file = data.image[0]
-        ? await service.uploadFile(data.image[0])
+        ? await postService.uploadImage(data.image[0])
         : null;
 
       if (file) {
-        service.deleteFile(post.featuredImage);
+        postService.deleteImage(post.featuredImage);
       }
 
-      const dbPost = await service.updatePost(post.slug, {
+      const dbPost = await postService.update(post.slug, {
         ...data,
-        featuredImage: file ? file.$id : undefined,
+        featuredImage: file || undefined,
       });
 
       if (dbPost) {
         navigate(`/post/${post.slug}`);
       }
     } else {
-      const file = await service.uploadFile(data.image[0]);
+      const file = await postService.uploadImage(data.image[0]);
 
       if (file) {
-        const fileId = file.$id;
-        data.featuredImage = fileId;
+        data.featuredImage = file;
 
-        const dbPost = await service.createPost({
+        const dbPost = await postService.create({
           ...data,
-          userId: userData.id,
+          userId: userData?.$id || userData?.id,
         });
 
         if (dbPost) {
@@ -116,7 +115,7 @@ function PostForm({ post }) {
         {post && (
           <div className="w-full mb-4">
             <img
-              src={service.getFilePreview(post.featuredImage)}
+              src={postService.imagePublicUrl(post.featuredImage)}
               alt={post.title}
               className="rounded-lg"
             />

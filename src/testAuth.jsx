@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import authService from "./appwrite/auth";
+import authService from "./services/authService";
 
 export default function TestAuth() {
   const [user, setUser] = useState(null);

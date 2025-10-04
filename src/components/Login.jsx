@@ -2,10 +2,11 @@ import React from "react";
 import { useState } from "react";
 import { Link, matchPath, Navigate, useNavigate } from "react-router-dom";
 import { login as authLogin } from "../store/authslice";
-import { Button, Input, Logo } from "../index";
+// Adjusted relative path to component barrel
+import { Button, Input, Logo } from "./index";
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
-import authService, { AuthService } from "../appwrite/auth";
+import authService, { AuthService } from "../services/authService";
 import conf from "../conf/conf";
 
 function Login() {
@@ -59,13 +60,13 @@ function Login() {
         <form onSubmit={handleSubmit(login)} className="mt-8">
           <div className="space-y-5">
             <Input
-              label="Ensil:"
+              label="Email:"
               placeholder="email enter "
               type="email"
               {...register("email", {
                 required: true,
                 validate: {
-                  matchPatern: (value) =>
+                  matchPattern: (value) =>
                     /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
                     "Email address must be a valid address",
                 },

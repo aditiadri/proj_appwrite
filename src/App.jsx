@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { useDispatch } from "react-redux";
-
-import { login } from "./store/authslice";
-import { logout } from "./store/authslice";
+import { Outlet } from "react-router-dom";
+import { login, logout } from "./store/authslice";
 import Footer from "./components/Footer/Footer";
-import authService from "./appwrite/auth";
+import authService from "./services/authService";
 import Header from "./components/Header/Header";
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,14 +23,17 @@ function App() {
       .finally(() => setLoading(false));
   }, []);
 
-  return !loading ? (
-    <div className="min-h-screen flex flex-wrap content-between bg-amber-200">
-      <div className="w-full">
-        <Header />
-        <Footer />
-      </div>
+  if (loading) return null;
+
+  return (
+    <div className="min-h-screen flex flex-col bg-amber-200">
+      <Header />
+      <main className="flex-1 p-4">
+        <Outlet />
+      </main>
+      <Footer />
     </div>
-  ) : null;
+  );
 }
 
 export default App;

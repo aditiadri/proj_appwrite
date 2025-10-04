@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Input, Logo } from "./index";
 import { useForm } from "react-hook-form";
-import authService from "../appwrite/auth";
+import authService from "../services/authService";
 import { useDispatch } from "react-redux";
 import { login } from "../store/authslice";
 
@@ -19,10 +19,10 @@ function Signup() {
     setError("");
 
     try {
-      const userData = await authService.createAccount(data);
+      const userData = await authService.signUp(data);
       console.log("Signup userData:", userData);
       if (userData) {
-        const currentUser = await authService.getCurrentUser();
+        const currentUser = await authService.getUser();
         console.log("Current user after signup:", currentUser);
         if (currentUser) dispatch(login(currentUser));
         navigate("/");
@@ -66,13 +66,13 @@ function Signup() {
             />
 
             <Input
-              label="Ensil:"
+              label="Email:"
               placeholder="email enter "
               type="email"
               {...register("email", {
                 required: true,
                 validate: {
-                  matchPatern: (value) =>
+                  matchPattern: (value) =>
                     /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
                     "Email address must be a valid address",
                 },
@@ -81,7 +81,7 @@ function Signup() {
             <Input
               label="Password:"
               type="password"
-              placeholder="enter passworf"
+              placeholder="Enter password"
               {...register("password", { required: true })}
             />
             <Button type="submit" className="w-full">

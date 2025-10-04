@@ -1,19 +1,25 @@
 import React from "react";
-import { Service } from "../appwrite/config";
 import { Link } from "react-router-dom";
+import postService from "../services/postService";
 
-function Postcards({ id, title, featuredImage }) {
+// Expect a post object spread in: { $id/slug, title, featured_image or featuredImage }
+function Postcards(post) {
+  const slug = post.slug || post.$id || post.id;
+  const imagePath = post.featuredImage || post.featured_image;
+  const imgUrl = postService.imagePublicUrl(imagePath);
   return (
-    <Link to={`/post/${id}`}>
+    <Link to={`/post/${slug}`}>
       <div className="w-full bg-gray-100 rounded-2xl">
         <div className="w-full justify-center mb-4">
-          <img
-            src={appwriteService.getFilePreview(featuredImage)}
-            alt="{title}"
-            className="rounded-2xl"
-          />
+          {imagePath && (
+            <img
+              src={imgUrl}
+              alt={post.title}
+              className="rounded-2xl w-full object-cover"
+            />
+          )}
         </div>
-        <h2 className="text-2xl font-extrabold">{title}</h2>
+        <h2 className="text-2xl font-extrabold px-2 pb-2">{post.title}</h2>
       </div>
     </Link>
   );

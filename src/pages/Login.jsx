@@ -1,8 +1,8 @@
 import React from "react";
-import { Login as LoginComponent } from "../components";
-import authService from "../appwrite/auth";
+// Import the actual login form UI component directly (renamed file path kept same)
+import LoginComponent from "../components/Login";
 
-function Login() {
+function LoginPage() {
   return (
     <div className="py-8">
       <LoginComponent />
@@ -10,4 +10,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginPage;

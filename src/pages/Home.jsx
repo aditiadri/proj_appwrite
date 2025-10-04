@@ -1,16 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Container, Postcards } from "../components";
-import { Service } from "../appwrite/config";
-const appwriteService = new Service();
+import postService from "../services/postService";
 
 function Home() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    appwriteService.getPosts().then((posts) => {
-      if (posts) {
-        setPosts(posts.documents);
-      }
+    postService.list({ status: "active" }).then((data) => {
+      if (data) setPosts(data);
     });
   }, []);
 
